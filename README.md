@@ -21,4 +21,4 @@ Este projeto é uma aplicação simples feita com HTML, CSS e JavaScript, desenv
 
 ## 🧑‍💻 Autor
 
-Projeto desenvolvido por [Seu Nome Aqui] — Curso de Sistemas de Informação — 2025
+Projeto desenvolvido por Alan Oliveira Medeiros — Curso de Sistemas de Informação — 2025

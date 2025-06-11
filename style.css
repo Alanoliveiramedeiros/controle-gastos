@@ -1,0 +1,138 @@
+:root {
+  --cor-fundo-claro: #f2f2f2;
+  --cor-fundo-escuro: #1e1e1e;
+  --cor-texto-claro: #333;
+  --cor-texto-escuro: #f9f9f9;
+  --cor-card-claro: #fff;
+  --cor-card-escuro: #2b2b2b;
+}
+
+* {
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--cor-fundo-claro);
+  color: var(--cor-texto-claro);
+}
+
+body.dark {
+  background-color: var(--cor-fundo-escuro);
+  color: var(--cor-texto-escuro);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 16px;
+  background: #007bff;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#btnExportarCSV {
+  background-color: #28a745;
+}
+#btnExportarCSV:hover {
+  background-color: #218838;
+}
+
+.card {
+  background: var(--cor-card-claro);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+body.dark .card {
+  background: var(--cor-card-escuro);
+}
+
+.entrada-dados {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.entrada-dados input,
+.entrada-dados select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  min-width: 140px;
+  background: #fff;
+  color: #000;
+}
+
+body.dark .entrada-dados input,
+body.dark .entrada-dados select {
+  background: #444;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+.entrada-dados input:focus,
+.entrada-dados select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.saldo-card {
+  background: #ebedee;
+  box-shadow: inset 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.saldo-card h2 {
+  margin-top: 5px;
+}
+
+.transacoes {
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+#lista-transacoes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista-transacoes li {
+  margin-bottom: 12px;
+  padding: 10px;
+  border-left: 5px solid #ccc;
+  border-radius: 6px;
+  background: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body.dark #lista-transacoes li {
+  background: #3a3a3a;
+}
+
+li.entrada {
+  border-left-color: #28a745;
+}
+
+li.saida {
+  border-left-color: #dc3545;
+}
